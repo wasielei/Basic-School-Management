@@ -1,5 +1,9 @@
-
+body {
+    background-color: rgb(201,76,76);
+    background-size: cover;
+}
 .login-box {
+    background-color: #92a8d1;
     margin: auto;
     width: 500px;
     height: 200px;
@@ -12,8 +16,67 @@
     width: 100px;
     background-image: url("logo.png");
     background-size: cover;
+
+}
+
+.logo-home {
+    height: 50px;
+    width: 50px;
 }
 .logo-area {
     display: flex;
     justify-content: center;
+}
+.first-row, .second-row {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+
+}
+.first-row a, .second-row a {
+    color: white;
+    text-decoration: none;
+}
+
+img.administrator {
+    height: 150px;
+    width: 150px;
+}
+img.student-detail {
+    height: 150px;
+    width: 150px;
+}
+img.manage-user {
+    height: 150px;
+    width: 150px;
+}
+img.manage-news {
+    height: 150px;
+    width: 150px;
+}
+img.examination {
+    height: 150px;
+    width: 150px;
+}
+img.time-table {
+    height: 150px;
+    width: 150px;
+}
+img.attendance {
+    height: 150px;
+    width: 150px;
+}
+img.setting {
+    height: 150px;
+    width: 150px;
+}
+img.human-resource {
+    height: 150px;
+    width: 150px;
+}
+img.finance {
+    height: 150px;
+    width: 150px;
 }
