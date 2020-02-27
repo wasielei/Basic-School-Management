@@ -1,0 +1,19 @@
+
+.login-box {
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    padding: 1px;
+    border: 2px solid black;
+}
+.logo {
+
+    height: 100px;
+    width: 100px;
+    background-image: url("logo.png");
+    background-size: cover;
+}
+.logo-area {
+    display: flex;
+    justify-content: center;
+}
