@@ -5,13 +5,15 @@ var data = {
             age: "35",
             section: "3A",
             email: "zhacky@gmail.com",
-            grade: 78
+            grade: 78,
+            batch: 2010
         },{
             name: "Gary",
             age: "35",
             section: "3A",
             email: "gary@gmail.com",
-            grade: 78
+            grade: 78,
+            batch: 2011
         },
     ]
 };
@@ -26,7 +28,8 @@ for (i = 0; i < data.students.length; i++) {
                     "<td>" + std.age + "</td>" +
                     "<td>" + std.section + "</td>" +
                     "<td>" + std.email + "</td>" +
-                    "<td>" + std.grade + "</td>";
+                    "<td>" + std.grade + "</td>" +
+                    "<td>" + std.batch + "</td>";
 
 }
 console.log(tableEl.innerHTML);
