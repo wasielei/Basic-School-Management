@@ -19,9 +19,14 @@ body {
 
 }
 
+.search {
+    display: flex;
+    justify-self: end;
+}
+
 .logo-home {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 .logo-area {
     display: flex;
@@ -35,6 +40,10 @@ body {
 
 
 }
+
+.first-row.row, .second-row.row {
+    margin-top: 40px;
+}
 .first-row a, .second-row a {
     color: white;
     text-decoration: none;
@@ -42,41 +51,52 @@ body {
 
 img.administrator {
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
 img.student-detail {
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
 img.manage-user {
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
 img.manage-news {
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
 img.examination {
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
 img.time-table {
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
 img.attendance {
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
 img.setting {
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
 img.human-resource {
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
 img.finance {
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
+
+
+
+
+
+
+
+
+
+
+
