@@ -6,14 +6,14 @@ var data = {
             section: "3A",
             email: "zhacky@gmail.com",
             grade: 78,
-            batch: 2010
+            batch: "2010-2011"
         },{
             name: "Gary",
             age: "35",
             section: "3A",
             email: "gary@gmail.com",
             grade: 78,
-            batch: 2011
+            batch: "2011-2012"
         },
     ]
 };
