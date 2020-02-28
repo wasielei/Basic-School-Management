@@ -1,7 +1,8 @@
 body {
-    background-color: rgb(201,76,76);
+    background-color: #c4edfc;
     background-size: cover;
 }
+
 .login-box {
     background-color: #92a8d1;
     margin: auto;
@@ -10,6 +11,7 @@ body {
     padding: 1px;
     border: 2px solid black;
 }
+
 .logo {
 
     height: 100px;
@@ -28,10 +30,12 @@ body {
     height: 40px;
     width: 40px;
 }
+
 .logo-area {
     display: flex;
     justify-content: center;
 }
+
 .first-row, .second-row {
     display: flex;
     align-items: center;
@@ -44,8 +48,9 @@ body {
 .first-row.row, .second-row.row {
     margin-top: 40px;
 }
+
 .first-row a, .second-row a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -53,49 +58,64 @@ img.administrator {
     height: 150px;
     width: 200px;
 }
+
 img.student-detail {
     height: 150px;
     width: 200px;
 }
+
 img.manage-user {
     height: 150px;
     width: 200px;
 }
+
 img.manage-news {
     height: 150px;
     width: 200px;
 }
+
 img.examination {
     height: 150px;
     width: 200px;
 }
+
 img.time-table {
     height: 150px;
     width: 200px;
 }
+
 img.attendance {
     height: 150px;
     width: 200px;
 }
+
 img.setting {
     height: 150px;
     width: 200px;
 }
+
 img.human-resource {
     height: 150px;
     width: 200px;
 }
+
 img.finance {
     height: 150px;
     width: 200px;
 }
 
+.student-button {
+    display: flex;
+    justify-content: flex-end;
+}
 
 
-
-
-
-
+.btn-group {
+    margin-top: 40px;
+}
+button.btn.btn-primary {
+    margin-right: 5px;
+}
 
 
 
