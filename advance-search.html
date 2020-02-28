@@ -1,12 +1,7 @@
 <html>
 <head>
     <title>School Management System</title>
-    <script src="https://code.jquery.com/jquery-3.1.1.js"
-            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
-            integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
-            crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether-theme-arrows-dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether-theme-arrows.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether-theme-basic.css">
@@ -131,7 +126,8 @@
                     <li><a class="dropdown-item" href="#">News</a></li>
                     <li><a class="dropdown-item" href="#">Event Creation</a></li>
                     <li class="dropdown-submenu">
-                        <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" href="#" data-toggle="dropdown">Human Resource</a>
+                        <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" href="#" data-toggle="dropdown">Human
+                            Resource</a>
                         <ul class="nav navbar-nav dropdown-menu">
                             <li><a class="dropdown-item" href="#">Setting</a></li>
                             <li><a class="dropdown-item" href="#">Employee Management</a></li>
@@ -164,36 +160,116 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
-<h1>STUDENT DETAILS</h1>
-        <H2>VIEW DETAILS</H2>
+    <h1>STUDENT DETAILS</h1>
+    <H2>ADVANCE SEARCH</H2>
 
     <div class="student-button">
         <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary mr-1">View All</button>
-            <button type="button" class="btn btn-primary">Advance Search</button>
+
             <button type="button" class="btn btn-secondary">Back</button>
         </div>
     </div>
-        <div class="check-box">
-            <label for="">Search</label>
-            <input type="text">
-            <label class="radio-inline"><input type="radio" name="optradio" checked>Present Student</label>
-            <label class="radio-inline"><input type="radio" name="optradio">Former Student</label>
+
+
+    <div>
+        <div class="row">
+            <div class="col-md-2">
+                <p>NAME:</p>
+            </div>
+            <div class="col-md-2">
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <p>Admission Number:</p>
+            </div>
+            <div class="col-md-2">
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <p>Select Course:</p>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>BSCOE</option>
+                    <option>BSCS</option>
+                    <option>BSIT</option>
+                    <option>BSCE</option>
+                    <option>BSEE</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <p>Batch:</p>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>2010-2011</option>
+                    <option>2011-2012</option>
+                    <option>2012-2013</option>
+                    <option>2013-2014</option>
+                    <option>2014-2015</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="row">
+        <div class="col-md-2">
+            <p>Select Category:</p>
+        </div>
+        <div class="col-md-2">
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Category1</option>
+                <option>Category2</option>
+                <option>Category3</option>
+                <option>Category4</option>
+                <option>Category5</option>
+            </select>
+        </div>
+
+    </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <p>Gender:</p>
+            </div>
+            <div class="col-md-2">
+                <label class="radio-inline"><input type="radio" name="optradio" checked>all</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Male</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Female</label>
+            </div>
+
         </div>
 
 
 
-<table id="students-table" class="table table-dark">
-    <tr>
-        <td>NAME</td>
-        <td>AGE</td>
-        <td>SECTION</td>
-        <td>EMAIL</td>
-        <td>GRADE</td>
-        <td>BATCH</td>
-    </tr>
-</table>
+
+
+
+
+    </div>
+    <div class="student-button">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+
 </div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
+        integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
+        crossorigin="anonymous"></script>
 <script src="js/data.js"></script>
 </body>
 </html>
