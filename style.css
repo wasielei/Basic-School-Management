@@ -125,3 +125,8 @@ button.btn.btn-primary {
 table#students-table {
     margin-top: 30px;
 }
+.check {
+    margin-top: 50px;
+    display: -webkit-box;
+
+}
