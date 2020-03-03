@@ -1,0 +1,215 @@
+<html>
+<head>
+    <title>School Management System</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether-theme-arrows-dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether-theme-arrows.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether-theme-basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
+          integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<style>
+    .dropdown-submenu {
+        position: relative;
+    }
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: 0;
+        border-radius: 0.25rem;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu > a::after {
+        border-bottom: 0.3em solid transparent;
+        border-left-color: inherit;
+        border-left-style: solid;
+        border-left-width: 0.3em;
+        border-top: 0.3em solid transparent;
+        content: " ";
+        display: block;
+        float: right;
+        height: 0;
+        margin-right: -0.6em;
+        margin-top: -0.95em;
+        width: 0;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+    .dropdown-submenu.pull-left > .dropdown-menu {
+        left: -75%;
+    }
+
+    .dropdown-menu .divider {
+        background-color: #e5e5e5;
+        height: 1px;
+        margin: 9px 0;
+        overflow: hidden;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar navbar-light bg-faded" role="navigation">
+        <a class="navbar-brand" href="#"> <img src="logo.png" alt="" class="logo-home"></a>
+        <ul class="nav navbar-nav">
+            <li class="active nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="active nav-item">
+                <a class="nav-link" href="#">Students</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Attendance</a>
+                <ul class="nav navbar-nav dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Attendance Report</a></li>
+                    <li><a class="dropdown-item" href="#">Attendance Register</a></li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Settings</a>
+                <ul class="nav navbar-nav dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Manage course/batch</a></li>
+                    <li><a class="dropdown-item" href="#">Manage Student Category</a></li>
+                    <li><a class="dropdown-item" href="#">Manage Subject</a></li>
+                    <li><a class="dropdown-item" href="#">General Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Add Admission Additional Detail</a></li>
+                    <li><a class="dropdown-item" href="#">SMS Module</a></li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Timetable</a>
+                <ul class="nav navbar-nav dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Create Timetable</a></li>
+                    <li><a class="dropdown-item" href="#">Edit Timetable</a></li>
+                    <li><a class="dropdown-item" href="#">Set Class Timing</a></li>
+                    <li><a class="dropdown-item" href="#">Create Weekdays</a></li>
+                    <li><a class="dropdown-item" href="#">View Timetable</a></li>
+                    <li><a class="dropdown-item" href="#">Teacher Timetable</a></li>
+                    <li><a class="dropdown-item" href="#">Institutional Timetable</a></li>
+                    <li><a class="dropdown-item" href="#">Work Allotment</a></li>
+                </ul>
+            </li>
+
+
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">More</a>
+                <ul class="nav navbar-nav dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Calendar</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" href="#" data-toggle="dropdown">Examination</a>
+                        <ul class="nav navbar-nav dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li><a class="dropdown-item" href="#">Exam Management</a></li>
+                            <li><a class="dropdown-item" href="#">General Reports</a></li>
+                            <li><a class="dropdown-item" href="#">Report Center</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">News</a></li>
+                    <li><a class="dropdown-item" href="#">Event Creation</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" href="#" data-toggle="dropdown">Human
+                            Resource</a>
+                        <ul class="nav navbar-nav dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Management</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Leave Management</a></li>
+                            <li><a class="dropdown-item" href="#">Create Payslip</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Search</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Payslip</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" href="#" data-toggle="dropdown">Finance</a>
+                        <ul class="nav navbar-nav dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fees</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Transaction</a></li>
+                            <li><a class="dropdown-item" href="#">Donation</a></li>
+                            <li><a class="dropdown-item" href="#">Automatic Transaction</a></li>
+                            <li><a class="dropdown-item" href="#">Payslip</a></li>
+                            <li><a class="dropdown-item" href="#">Asset Liability Management</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <form class="form-inline my-lg-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    <h1>TIMETABLE</h1>
+    <H2>SELECT BATCH TO VIEW</H2>
+
+    <div class="student-button">
+        <div class="btn-group" role="group" aria-label="Basic example">
+
+            <button type="button" class="btn btn-secondary">Back</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <p>SELECT A TIMETABLE :</p>
+        </div>
+        <div class="col-md-2">
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Common</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <p>SELECT A BATCH :</p>
+        </div>
+        <div class="col-md-2">
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Common</option>
+            </select>
+        </div>
+
+    </div>
+
+
+    <div>
+
+        <div class="student-button col-md-2">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary">VIEW</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
+            integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
+            crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+</body>
+</html>
