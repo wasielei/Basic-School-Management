@@ -161,7 +161,7 @@
         </form>
     </div>
     <h1>HUMAN RESOURCE</h1>
-    <H2>SETTINGS</H2>
+    <H2>ADD ADDITIONAL DETAIL</H2>
 
     <div class="student-button">
         <div class="btn-group" role="group" aria-label="Basic example">
@@ -170,56 +170,91 @@
         </div>
     </div>
 
-<div class="container">
-    <div class="row first-row">
 
-        <div class=col-2><a href="hr-add-employee-category.html"><h5><u>Add Employee Category</u></h5></a>
-        <p>Add and Edit Employee Category</p>
+    <div>
+        <div class="row">
+            <div class="col-md-3">
+                <p>NAME:</p>
+            </div>
+            <div class="col-md-2">
+                <input type="text">
+            </div>
         </div>
 
-        <div class=col-2><a href="hr-add-employee-position.html"><h5><u>Add Employee Position</u></h5></a>
-        <p>Add and Edit Employee Position</p>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <p>STATUS:</p>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Active
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Inactive
+                    </label>
+                </div>
+            </div>
         </div>
 
-        <div class=col-2><a href="hr-add-department-category.html"><h5><u>Add Employee Department</u></h5></a>
-            <p>Add and Edit Employee Department</p>
+
+        <div class="row">
+            <div class="col-md-3">
+                <p>ADD INFORMATION:</p>
+            </div>
+            <div class="col-md-2">
+                <input type="text">
+            </div>
         </div>
-        <div class=col-2><a href="hr-payroll-category.html"><h5><u>Add Payroll Category</u></h5></a>
-            <p>Add and Edit  Employee Payroll Category</p>
+        <div class="row">
+            <div class="col-md-3">  </div>
+            <div class="col-md-2">
+        <a class="add_button_img" href="#" onclick="add_fields(this, &quot;additional_field_options&quot;, &quot;<div class=\&quot;fields label-field-pair\&quot;>\n  <label for=\&quot;additional_field_additional_field_options_attributes_new_additional_field_options_\&quot;><\/label>\n  <div class=\&quot;text-input-bg\&quot;>\n  <input id=\&quot;additional_field_additional_field_options_attributes_new_additional_field_options_field_option\&quot; name=\&quot;additional_field[additional_field_options_attributes][new_additional_field_options][field_option]\&quot; size=\&quot;30\&quot; type=\&quot;text\&quot; /><\/div>\n  <input id=\&quot;additional_field_additional_field_options_attributes_new_additional_field_options__destroy\&quot; name=\&quot;additional_field[additional_field_options_attributes][new_additional_field_options][_destroy]\&quot; type=\&quot;hidden\&quot; /><a class=\&quot;delete_button_img\&quot; href=\&quot;#\&quot; onclick=\&quot;remove_fields(this); return false;\&quot;><\/a>\n<\/div>&quot;); return false;">Add</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="student-button col-md-2">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">CREATE</button>
         </div>
     </div>
 
-    <div class="row second-row">
-
-        <div class=col-2><a href="hr-add-additional-detail.html"><h5><u>Add Additional Detail</u></h5></a>
-            <p>Add and Edit Additional Details for Employee Admission Forms</p>
-        </div>
-
-        <div class=col-2><a href="hr-add-employee-grade.html"><h5><u>Add Employee Grade</u></h5></a>
-            <p>Add and Edit Employee Grade</p>
-        </div>
-
-        <div class=col-2><a href=""><h5><u>Add Bank Detail</u></h5></a>
-            <p>Add and Edit Bank Detail</p>
-        </div>
-
-
-
-    </div>
-
-
-
-
-    </div>
 </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.js"
-            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
-            integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
-            crossorigin="anonymous"></script>
-    <script src="js/data.js"></script>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
+        integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
+        crossorigin="anonymous"></script>
+<script src="js/data.js"></script>
 <script>
     function goBack() {
         window.history.back();
