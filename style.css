@@ -266,7 +266,7 @@ html {
 
 
 .box{
-    background-color: #000;
+    background-color: transparent;
     font-family: 'Oxygen', sans-serif;
     border-radius: 0 30px;
     overflow: hidden;
