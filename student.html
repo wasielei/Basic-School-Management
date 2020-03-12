@@ -73,16 +73,16 @@
         <a class="navbar-brand" href="#"> <img src="logo.png" alt="" class="logo-home"></a>
         <ul class="nav navbar-nav">
             <li class="active nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
+                <a class="nav-link" href="admin.html">Dashboard</a>
             </li>
             <li class="active nav-item">
-                <a class="nav-link" href="#">Students</a>
+                <a class="nav-link" href="advance-search.html">Students</a>
             </li>
             <li class="nav-item dropdown">
                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Attendance</a>
                 <ul class="nav navbar-nav dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Attendance Report</a></li>
-                    <li><a class="dropdown-item" href="#">Attendance Register</a></li>
+                    <li><a class="dropdown-item" href="attendance-report.html">Attendance Report</a></li>
+                    <li><a class="dropdown-item" href="attendance-register.html">Attendance Register</a></li>
 
                 </ul>
             </li>
@@ -171,7 +171,7 @@
         <div class="btn-group" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-primary mr-1">View All</button>
             <button type="button" class="btn btn-primary">Advance Search</button>
-            <button type="button" class="btn btn-secondary">Back</button>
+            <button type="button" class="btn btn-secondary" onclick="goBack()">Back</button>
         </div>
     </div>
         <div class="check-box">
@@ -195,5 +195,10 @@
 </table>
 </div>
 <script src="js/data.js"></script>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
 </body>
 </html>
