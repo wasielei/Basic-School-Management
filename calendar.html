@@ -1,0 +1,342 @@
+<html>
+<head>
+    <title>School Management System</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether-theme-arrows-dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether-theme-arrows.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether-theme-basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
+          integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<style>
+    * {box-sizing: border-box;}
+    ul {list-style-type: none;}
+    body {font-family: Verdana, sans-serif;}
+
+    .month {
+        padding: 70px 25px;
+        width: 100%;
+        background: #1abc9c;
+        text-align: center;
+    }
+
+    .month ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .month .prev {
+        float: left;
+        padding-top: 10px;
+    }
+
+    .month .next {
+        float: right;
+        padding-top: 10px;
+    }
+
+    .weekdays {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #ddd;
+    }
+
+    .weekdays li {
+        display: inline-block;
+        width: 13.6%;
+        color: #666;
+        text-align: center;
+    }
+
+    .days {
+        padding: 10px 0;
+        background: #eee;
+        margin: 0;
+    }
+
+    .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size:12px;
+        color: #777;
+    }
+
+    .days li .active {
+        padding: 5px;
+        background: #1abc9c;
+        color: white !important
+    }
+
+    /* Add media queries for smaller screens */
+    @media screen and (max-width:720px) {
+        .weekdays li, .days li {width: 13.1%;}
+    }
+
+    @media screen and (max-width: 420px) {
+        .weekdays li, .days li {width: 12.5%;}
+        .days li .active {padding: 2px;}
+    }
+
+    @media screen and (max-width: 290px) {
+        .weekdays li, .days li {width: 12.2%;}
+    }
+</style>
+
+
+
+<style>
+    .dropdown-submenu {
+        position: relative;
+    }
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: 0;
+        border-radius: 0.25rem;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu > a::after {
+        border-bottom: 0.3em solid transparent;
+        border-left-color: inherit;
+        border-left-style: solid;
+        border-left-width: 0.3em;
+        border-top: 0.3em solid transparent;
+        content: " ";
+        display: block;
+        float: right;
+        height: 0;
+        margin-right: -0.6em;
+        margin-top: -0.95em;
+        width: 0;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+    .dropdown-submenu.pull-left > .dropdown-menu {
+        left: -75%;
+    }
+
+    .dropdown-menu .divider {
+        background-color: #e5e5e5;
+        height: 1px;
+        margin: 9px 0;
+        overflow: hidden;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar navbar-light bg-faded" role="navigation">
+        <a class="navbar-brand" href="#"> <img src="logo.png" alt="" class="logo-home"></a>
+        <ul class="nav navbar-nav">
+            <li class="active nav-item">
+                <a class="nav-link" href="admin.html">Dashboard</a>
+            </li>
+            <li class="active nav-item">
+                <a class="nav-link" href="advance-search.html">Students</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Attendance</a>
+                <ul class="nav navbar-nav dropdown-menu">
+                    <li><a class="dropdown-item" href="attendance-report.html">Attendance Report</a></li>
+                    <li><a class="dropdown-item" href="attendance-register.html">Attendance Register</a></li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Settings</a>
+                <ul class="nav navbar-nav dropdown-menu">
+                    <li><a class="dropdown-item" href="manage-course.html">Manage course/batch</a></li>
+                    <li><a class="dropdown-item" href="#">Manage Student Category</a></li>
+                    <li><a class="dropdown-item" href="#">Manage Subject</a></li>
+                    <li><a class="dropdown-item" href="#">General Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Add Admission Additional Detail</a></li>
+                    <li><a class="dropdown-item" href="#">SMS Module</a></li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Timetable</a>
+                <ul class="nav navbar-nav dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Create Timetable</a></li>
+                    <li><a class="dropdown-item" href="#">Edit Timetable</a></li>
+                    <li><a class="dropdown-item" href="#">Set Class Timing</a></li>
+                    <li><a class="dropdown-item" href="#">Create Weekdays</a></li>
+                    <li><a class="dropdown-item" href="#">View Timetable</a></li>
+                    <li><a class="dropdown-item" href="#">Teacher Timetable</a></li>
+                    <li><a class="dropdown-item" href="#">Institutional Timetable</a></li>
+                    <li><a class="dropdown-item" href="#">Work Allotment</a></li>
+                </ul>
+            </li>
+
+
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">More</a>
+                <ul class="nav navbar-nav dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Calendar</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" href="#" data-toggle="dropdown">Examination</a>
+                        <ul class="nav navbar-nav dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li><a class="dropdown-item" href="#">Exam Management</a></li>
+                            <li><a class="dropdown-item" href="#">General Reports</a></li>
+                            <li><a class="dropdown-item" href="#">Report Center</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">News</a></li>
+                    <li><a class="dropdown-item" href="#">Event Creation</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" href="#" data-toggle="dropdown">Human
+                            Resource</a>
+                        <ul class="nav navbar-nav dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Management</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Leave Management</a></li>
+                            <li><a class="dropdown-item" href="#">Create Payslip</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Search</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Payslip</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" href="#" data-toggle="dropdown">Finance</a>
+                        <ul class="nav navbar-nav dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fees</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Transaction</a></li>
+                            <li><a class="dropdown-item" href="#">Donation</a></li>
+                            <li><a class="dropdown-item" href="#">Automatic Transaction</a></li>
+                            <li><a class="dropdown-item" href="#">Payslip</a></li>
+                            <li><a class="dropdown-item" href="#">Asset Liability Management</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <form class="form-inline my-lg-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    <h1>ATTENDANCE</h1>
+    <H2>ATTENDANCE REGISTER</H2>
+
+    <div class="student-button">
+        <div class="btn-group" role="group" aria-label="Basic example">
+
+            <button type="button" class="btn btn-secondary" onclick="goBack()">Back</button>
+        </div>
+    </div>
+
+
+    <h1>CSS Calendar</h1>
+
+    <div class="month">
+        <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>
+                August<br>
+                <span style="font-size:18px">2017</span>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+    </ul>
+
+    <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+    </ul>
+
+
+
+    <div class="student-button col-md-2">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
+        integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
+        crossorigin="anonymous"></script>
+<script src="js/data.js"></script>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>
